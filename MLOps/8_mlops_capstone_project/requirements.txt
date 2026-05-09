@@ -1,0 +1,12 @@
+# Core runtime for capstone flows (script + adaptive + Metaflow wrapper)
+mlflow>=3.8,<4
+pandas>=2.2,<3
+numpy>=1.26,<3
+scikit-learn>=1.4,<2
+pyarrow>=14,<23
+matplotlib>=3.8,<4
+seaborn>=0.13,<1
+nannyml>=0.13,<1
+
+# Orchestration (needed only if you run metaflow_capstone_flow.py)
+metaflow>=2.19,<3
