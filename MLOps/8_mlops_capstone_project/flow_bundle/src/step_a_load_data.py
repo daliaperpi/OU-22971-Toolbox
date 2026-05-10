@@ -41,7 +41,13 @@ def _dataset_profile(df: pd.DataFrame, label: str, source_path: Path) -> dict:
 
 def find_tlc_data_dir() -> Path:
     """Locate TLC_data directory from workspace root."""
-    candidates = [Path("TLC_data"), Path("MLOps/TLC_data"), Path("../../TLC_data"), Path("../../../TLC_data")]
+    candidates = [
+        Path("TLC_data"),
+        Path("MLOps/TLC_data"),
+        Path("../../TLC_data"),
+        Path("../../../TLC_data"),
+        Path("../../../../TLC_data"),
+    ]
     for candidate in candidates:
         if candidate.exists():
             return candidate.resolve()
